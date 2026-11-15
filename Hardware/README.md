@@ -1,4 +1,4 @@
-# Cartes électroniques (KiCad) — version V1.9.2
+# Cartes électroniques (KiCad) — version V1.9.3
 
 | Carte | Rôle | Composants principaux |
 |---|---|---|
@@ -7,12 +7,31 @@
 
 Chaque dossier contient le projet (`.kicad_pro`), le schéma (`.kicad_sch`) et le routage (`.kicad_pcb`).
 
+### Carte de puissance — dessus
+
+![Carte de puissance, dessus](../Docs/images/puissance_dessus.png)
+
+### Carte de puissance — dessous (vue retournée)
+
+![Carte de puissance, dessous](../Docs/images/puissance_dessous.png)
+
+### Plateau — dessus et dessous (vue retournée)
+
+<img src="../Docs/images/plateau_dessus.png" alt="Plateau, dessus" width="380"> <img src="../Docs/images/plateau_dessous.png" alt="Plateau, dessous" width="380">
+
 ## Fabrication
 
-Les fichiers Gerber de la version V1.9.2 sont dans la Release **`pcb-v1.9.2`** du dépôt.
+Les fichiers Gerber de la version V1.9.3 sont dans la Release **`pcb-v1.9.3`** du dépôt.
 Pour les régénérer après une modification : dans l'éditeur de PCB, **Fichiers → Fichiers de fabrication → Gerbers**.
 
 ## Points ouverts
 
 - Les positions de H1, H2 et H3 sur le plateau sont provisoires.
 - Les valeurs de puissance (pistes, shunts) sont dimensionnées pour le L293D : à revoir en cas de passage à un pont MOSFET.
+
+## Historique
+
+| Version | Changement |
+|---|---|
+| V1.9.3 | Sérigraphie allégée : seuls restent les repères utiles au montage. Cuivre, vernis et perçages identiques à la V1.9.2 |
+| V1.9.2 | Allègement des vias de masse, DRC sans erreur |

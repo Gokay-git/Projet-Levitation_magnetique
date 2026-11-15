@@ -6,7 +6,7 @@
 	(title_block
 		(title "Carte de puissance et d'acquisition LM")
 		(date "2026-11-15")
-		(rev "V1.8")
+		(rev "V1.9.3")
 		(company "ENSEA - Projet LM (lévitation magnétique)")
 		(comment 1 "Nucleo-L476RG enfichée sur J2 (CN7) et J8 (CN10)")
 		(comment 2 "Capteurs Hall déportés sur la carte plateau (câble J3)")

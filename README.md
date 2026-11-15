@@ -6,9 +6,13 @@ pilotées par une carte NUCLEO-L476RG.
 
 **Objectif phase 1 : lévitation stable d'un objet d'au moins 800 g pour le 15 décembre 2026.**
 
-| Carte de puissance (shield Nucleo) | Plateau de mesure |
-|---|---|
-| ![Carte de puissance](Docs/images/pcb_puissance.png) | ![Plateau](Docs/images/pcb_plateau.png) |
+**Carte de puissance** (shield enfiché sur la Nucleo) — [vue de dessous](Docs/images/puissance_dessous.png)
+
+![Carte de puissance, vue de dessus](Docs/images/puissance_dessus.png)
+
+**Plateau de mesure** (3 capteurs à effet Hall) — [vue de dessous](Docs/images/plateau_dessous.png)
+
+<img src="Docs/images/plateau_dessus.png" alt="Plateau, vue de dessus" width="420">
 
 ## Contenu du dépôt
 
@@ -26,11 +30,11 @@ Les versions figées sont dans les [Releases](../../releases) :
 | Version | Contenu |
 |---|---|
 | `firmware-v2.0` | Projet STM32CubeIDE complet (zip) et outil PC |
-| `pcb-v1.9.2` | Fichiers Gerber des 2 cartes, à envoyer au fabricant |
+| `pcb-v1.9.3` | Fichiers Gerber des 2 cartes, à envoyer au fabricant |
 
 ## État au 15 novembre 2026
 
-- **Cartes V1.9.2** : vérification DRC sans erreur, prêtes à être commandées.
+- **Cartes V1.9.3** : vérification DRC sans erreur, prêtes à être commandées.
 - **Firmware V2** : compile sans avertissement et a été validé en simulation (modèle instable
   2 axes + L293D + ADC). Il n'a pas encore été testé sur la maquette.
 - **Valeurs provisoires** dans `Firmware/LM_V2/Core/Inc/LM_config.h` : R et L des bobines,

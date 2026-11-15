@@ -6,7 +6,7 @@
 	(title_block
 		(title "Plateau capteurs Hall LM")
 		(date "2026-11-15")
-		(rev "V1.8")
+		(rev "V1.9.3")
 		(company "ENSEA - Projet LM (lévitation magnétique)")
 		(comment 1 "Relié à J3 de la carte de puissance (câble JST-XH 6 points, 1 vers 1)")
 		(comment 2 "Les bobines ne passent pas par cette carte")
