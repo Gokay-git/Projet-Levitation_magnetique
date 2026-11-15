@@ -21,7 +21,8 @@ pilotées par une carte NUCLEO-L476RG.
 | [`Hardware/`](Hardware) | Les 2 cartes KiCad : puissance et plateau |
 | [`Firmware/`](Firmware) | Le projet STM32CubeIDE `LM_V2` (boucle de lévitation à 5 kHz) |
 | [`Outils/`](Outils) | `lm_outil.py` : lecture du log série, calcul de L, ω₀ et β, courbes |
-| [`Docs/`](Docs) | Documents du projet |
+| [`Simulation/`](Simulation) | Le firmware compilé pour PC et testé sur un modèle de la maquette |
+| [`Docs/`](Docs) | Schémas en PDF, rendus des cartes |
 
 ## Versions
 
@@ -36,17 +37,21 @@ Les versions figées sont dans les [Releases](../../releases) :
 
 - **Cartes V1.9.3** : vérification DRC sans erreur, prêtes à être commandées.
 - **Firmware V2** : compile sans avertissement et a été validé en simulation (modèle instable
-  2 axes + L293D + ADC). Il n'a pas encore été testé sur la maquette.
+  2 axes + L293D + ADC, résultats dans [`Simulation/`](Simulation)). Il n'a pas encore été testé
+  sur la maquette.
 - **Valeurs provisoires** dans `Firmware/LM_V2/Core/Inc/LM_config.h` : R et L des bobines,
   ω₀ et β de chaque axe. Elles seront mesurées avec l'outil PC une fois les cartes reçues.
 
 ## Démarrer
 
-- **Cartes** : KiCad 7 ou plus récent, ouvrir `Hardware/LM_puissance/LM_puissance.kicad_pro`
-  ou `Hardware/LM_plateau/LM_plateau.kicad_pro`.
+- **Cartes** : schémas en PDF dans `Docs/schemas`, composants à commander dans les
+  `nomenclature.csv` de `Hardware/`. Pour modifier : KiCad 7 ou plus récent, ouvrir
+  `Hardware/LM_puissance/LM_puissance.kicad_pro` ou `Hardware/LM_plateau/LM_plateau.kicad_pro`.
 - **Firmware** : STM32CubeIDE, **File → Open Projects from File System** → `Firmware/LM_V2`,
   puis **Project → Clean** et **Ctrl+B**. Mode d'emploi détaillé : `Firmware/LM_V2/LISEZMOI.txt`.
 - **Outil PC** : voir [`Outils/README.md`](Outils/README.md).
+- **Simulation** : `python Simulation/simuler.py` (compilateur C nécessaire), voir
+  [`Simulation/README.md`](Simulation/README.md).
 
 ## Règles de travail
 

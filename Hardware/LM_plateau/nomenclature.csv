@@ -1,0 +1,4 @@
+Quantité,Repères,Valeur,Composant,Boîtier
+3,"C1, C2, C3",100nF,Condensateur céramique,0805
+1,J1,Vers carte puissance (JST-XH),Connecteur JST-XH 6 points coudé,S6B-XH-A
+3,"U1, U2, U3",DRV5055A4 (SOT-23),Capteur à effet Hall linéaire,SOT-23

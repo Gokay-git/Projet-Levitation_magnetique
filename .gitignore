@@ -22,3 +22,6 @@ __pycache__/
 
 # Archives : les versions figees vont dans les Releases GitHub
 *.zip
+
+# Simulation : journal genere
+Simulation/journal_simulation.txt
