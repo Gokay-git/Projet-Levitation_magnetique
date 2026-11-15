@@ -1,0 +1,24 @@
+# KiCad : fichiers locaux, sauvegardes et fichiers temporaires
+*.lck
+*-backups/
+fp-info-cache
+*.kicad_prl
+_autosave-*
+*.bak
+\#auto_saved_files\#
+
+# STM32CubeIDE : fichiers generes ou propres a chaque PC
+Debug/
+Release/
+.settings/
+*.launch
+*.su
+*.cyclo
+.metadata/
+
+# Outil PC : dossiers de resultats
+mesures_*/
+__pycache__/
+
+# Archives : les versions figees vont dans les Releases GitHub
+*.zip

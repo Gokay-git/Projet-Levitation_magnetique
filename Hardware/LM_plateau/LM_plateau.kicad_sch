@@ -1,0 +1,2864 @@
+(kicad_sch
+	(version 20230121)
+	(generator eeschema)
+	(uuid e85051b1-4a4c-4104-8e98-76c3dc255a59)
+	(paper "A4")
+	(title_block
+		(title "Plateau capteurs Hall LM")
+		(date "2026-11-15")
+		(rev "V1.8")
+		(company "ENSEA - Projet LM (lévitation magnétique)")
+		(comment 1 "Relié à J3 de la carte de puissance (câble JST-XH 6 points, 1 vers 1)")
+		(comment 2 "Les bobines ne passent pas par cette carte")
+	)
+	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x06"
+			(pin_names
+				(offset 1.016)
+				hide
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 7.62 0)
+				(effects
+					(font (size 1.27 1.27))
+				)
+			)
+			(property "Value" "Conn_01x06"
+				(at 0 -10.16 0)
+				(effects
+					(font (size 1.27 1.27))
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(symbol "Conn_01x06_1_1"
+				(rectangle
+					(start -1.27 -7.493)
+					(end 0 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill (type none))
+				)
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill (type none))
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill (type none))
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill (type none))
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill (type none))
+				)
+				(rectangle
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill (type none))
+				)
+				(rectangle
+					(start -1.27 6.35)
+					(end 1.27 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill (type background))
+				)
+				(pin passive line
+					(at -5.08 5.08 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "1"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "2"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "3"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "4"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "5"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -7.62 0)
+					(length 3.81)
+					(name "Pin_6"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "6"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+			)
+		)
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names (offset 0.254))
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font (size 1.27 1.27))
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font (size 1.27 1.27))
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762)
+						(xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill (type none))
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762)
+						(xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill (type none))
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "1"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "2"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+			)
+		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016)
+				hide
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font (size 1.27 1.27))
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font (size 1.27 1.27))
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill (type none))
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "1"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+			)
+		)
+		(symbol "Sensor_Magnetic:DRV5055A4xDBZxQ1"
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 2.54 12.7 0)
+				(effects
+					(font (size 1.27 1.27))
+				)
+			)
+			(property "Value" "DRV5055A4xDBZxQ1"
+				(at 2.54 10.16 0)
+				(effects
+					(font (size 1.27 1.27))
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/drv5055-q1.pdf"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_keywords" "Automotive Ratiometric Linear Hall Effect Sensor AEC-Q100"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_description" "12.5 mV/mT,±169-mT, 20-kHz, 3.3/5V, SOT-23"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_fp_filters" "SOT?23*"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(symbol "DRV5055A4xDBZxQ1_1_1"
+				(rectangle
+					(start -5.08 7.62)
+					(end 5.08 -7.62)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill (type background))
+				)
+				(pin power_in line
+					(at -2.54 10.16 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "1"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "OUT"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "2"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -10.16 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "3"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:+3V3"
+			(power)
+			(pin_names (offset 0))
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "Value" "+3V3"
+				(at 0 3.556 0)
+				(effects
+					(font (size 1.27 1.27))
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_description" "Power symbol creates a global label with name \"+3V3\""
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(symbol "+3V3_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27)
+						(xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill (type none))
+				)
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill (type none))
+				)
+				(polyline
+					(pts
+						(xy 0 2.54)
+						(xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill (type none))
+				)
+			)
+			(symbol "+3V3_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					hide
+					(name "+3V3"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "1"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:GND"
+			(power)
+			(pin_names (offset 0))
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -6.35 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "Value" "GND"
+				(at 0 -3.81 0)
+				(effects
+					(font (size 1.27 1.27))
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_description" "Power symbol creates a global label with name \"GND\" , ground"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(symbol "GND_0_1"
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 -1.27)
+						(xy 1.27 -1.27)
+						(xy 0 -2.54)
+						(xy -1.27 -1.27)
+						(xy 0 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill (type none))
+				)
+			)
+			(symbol "GND_1_1"
+				(pin power_in line
+					(at 0 0 270)
+					(length 0)
+					hide
+					(name "GND"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "1"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+			)
+		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+				hide
+			)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font (size 1.27 1.27))
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(property "ki_description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font (size 1.27 1.27))
+					hide
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "pwr"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+					(number "1"
+						(effects
+							(font (size 1.27 1.27))
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0)
+						(xy 0 1.27)
+						(xy -1.016 1.905)
+						(xy 0 2.54)
+						(xy 1.016 1.905)
+						(xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill (type none))
+				)
+			)
+		)
+	)
+	(rectangle
+		(start 12.7 20.32)
+		(end 284.48 116.84)
+		(stroke
+			(width 0)
+			(type dash)
+		)
+		(fill (type none))
+		(uuid a24dabd9-1725-40c9-afc1-77f8343b6175)
+	)
+	(text "Capteurs Hall DRV5055A4 (SOT-23) et connecteur vers la carte de puissance"
+		(at 15.24 22.86 0)
+		(effects
+			(font
+				(size 2 2)
+				bold
+			)
+			(justify left top)
+		)
+		(uuid 65104314-ed56-4270-8afd-f5cf3d7ef946)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x06")
+		(at 33.02 68.58 0)
+		(mirror y)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 3b0f5d62-bf99-4b7d-bb19-571b9ba72906)
+		(property "Reference" "J1"
+			(at 33.02 60.96 0)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "Value" "Vers carte puissance (JST-XH)"
+			(at 33.02 80.01 0)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_S6B-XH-A_1x06_P2.50mm_Horizontal"
+			(at 33.02 68.58 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 68.58 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 5f491243-1ec8-48ed-bbc6-e85d8da4516d)
+		)
+		(pin "2"
+			(uuid 4f021682-c362-4782-85ec-326d98ef939d)
+		)
+		(pin "3"
+			(uuid 5f7c3d38-4941-4c5e-acba-5497384b163c)
+		)
+		(pin "4"
+			(uuid d5192cae-8d0c-46c6-8418-9c063a373c06)
+		)
+		(pin "5"
+			(uuid 50d9fdc8-e101-4f88-a948-27a5d81da949)
+		)
+		(pin "6"
+			(uuid 84047e1a-c84b-4161-8aff-46b19bb9eea2)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 38.1 63.5)
+			(xy 43.18 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 033d66b6-5f03-49a8-b219-ede86e36d17b)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 43.18 63.5 270)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 9c7fb380-63f9-4500-8f6e-c6e4b5e6f418)
+		(property "Reference" "#PWR001"
+			(at 43.18 63.5 270)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+				hide
+			)
+		)
+		(property "Value" "+3V3"
+			(at 48.78 63.5 270)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 63.5 270)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 63.5 270)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid e31bf5bf-fcf7-485b-b414-c1057f33cbf6)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR001")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 38.1 66.04)
+			(xy 43.18 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 5076b734-3516-40ee-b25b-2f7b8c57c736)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 43.18 66.04 90)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 72217e4f-714b-4e3e-b08b-036aa6ae042e)
+		(property "Reference" "#PWR002"
+			(at 43.18 66.04 90)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+				hide
+			)
+		)
+		(property "Value" "GND"
+			(at 48.78 66.04 90)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+				hide
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 66.04 90)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 66.04 90)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 50685218-ecc5-49a3-b0d7-c31408e925d1)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR002")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 38.1 71.12)
+			(xy 43.18 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid fe540cb2-5210-4083-bbc4-d00b340b2c3a)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 43.18 71.12 90)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 33347705-bbf8-48e7-9b31-4df025917169)
+		(property "Reference" "#PWR003"
+			(at 43.18 71.12 90)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+				hide
+			)
+		)
+		(property "Value" "GND"
+			(at 48.78 71.12 90)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+				hide
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 71.12 90)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 71.12 90)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 70a286bd-7984-4b1b-82a3-908604df463b)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR003")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 38.1 68.58)
+			(xy 48.26 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid a56ab25a-4b6e-4f33-b265-b16d56668461)
+	)
+	(label "HALL_1"
+		(at 48.26 68.58 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left bottom)
+		)
+		(uuid 287e102f-bc4c-4292-b5ae-d3d0077e537f)
+	)
+	(wire
+		(pts
+			(xy 38.1 73.66)
+			(xy 48.26 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid b4a41b09-8405-4e0e-9879-54b707ca0fa3)
+	)
+	(label "HALL_2"
+		(at 48.26 73.66 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left bottom)
+		)
+		(uuid 0932832d-fb08-4dfc-bfde-40fa3cef4221)
+	)
+	(wire
+		(pts
+			(xy 38.1 76.2)
+			(xy 48.26 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 22e66d8a-663a-458a-b9f6-e6c6637453b0)
+	)
+	(label "HALL_3"
+		(at 48.26 76.2 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left bottom)
+		)
+		(uuid d4f17af6-da49-4948-9afb-f033d7dc978b)
+	)
+	(symbol
+		(lib_id "Sensor_Magnetic:DRV5055A4xDBZxQ1")
+		(at 116.84 68.58 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid ab15786d-0a45-4baa-9d31-7f3356fb225b)
+		(property "Reference" "U1"
+			(at 124.46 59.69 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Value" "DRV5055A4 (SOT-23)"
+			(at 124.46 62.23 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 116.84 68.58 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 68.58 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 2a8b9aae-390d-4613-9d6f-bafd86388518)
+		)
+		(pin "2"
+			(uuid f1a22d94-84ab-4cc1-b485-079619ea7aa4)
+		)
+		(pin "3"
+			(uuid 41a19556-4b92-4e55-a6cf-1d637be48f17)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 114.3 58.42)
+			(xy 114.3 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid b259d29e-fca8-450d-b051-c0a08b041e7b)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 114.3 55.88 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid bc5bbe4a-99a1-4927-8bbc-1a748a79c056)
+		(property "Reference" "#PWR004"
+			(at 114.3 55.88 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "+3V3"
+			(at 114.3 51.68 0)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 55.88 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 55.88 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid f9a5e67b-1669-4e7b-9973-4a9d67b6c666)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR004")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 114.3 78.74)
+			(xy 114.3 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 3a028593-e3df-42bf-aec3-92029e405ca4)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 114.3 81.28 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid b67770cd-5d57-490f-8009-e1181b937f30)
+		(property "Reference" "#PWR005"
+			(at 114.3 81.28 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 85.48 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 81.28 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 114.3 81.28 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 6a9793e0-bb3d-4f43-a5f1-9be38ea9130c)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR005")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 124.46 68.58)
+			(xy 129.54 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid a47a972e-33b5-46ff-9252-8d7ece5edac9)
+	)
+	(label "HALL_1"
+		(at 129.54 68.58 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left bottom)
+		)
+		(uuid af703979-e625-4b21-8e62-b22abc1bed11)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 101.6 68.58 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid bb333f4a-a50e-4073-b29d-7eec4fd6be47)
+		(property "Reference" "C1"
+			(at 104.14 67.31 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 104.14 69.85 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 101.6 68.58 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 68.58 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid a4d4e321-268d-4339-85c7-77331e4a13ed)
+		)
+		(pin "2"
+			(uuid 086e573b-613e-47ea-bbe1-f442a1eabda7)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 101.6 64.77)
+			(xy 101.6 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 90d151c5-d76c-4119-aea4-a02f1ea312b5)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 101.6 62.23 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid a731d9c6-139c-4158-a1ae-02a45bf42691)
+		(property "Reference" "#PWR006"
+			(at 101.6 62.23 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "+3V3"
+			(at 101.6 58.03 0)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 62.23 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 62.23 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid b6781a6d-bbd8-4484-8419-6ec8e8330aab)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR006")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 101.6 72.39)
+			(xy 101.6 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 84cd8016-97b5-424f-8006-aa8b3ee48ede)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 101.6 74.93 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 160fcf55-56bb-476d-9277-79a71689111e)
+		(property "Reference" "#PWR007"
+			(at 101.6 74.93 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "GND"
+			(at 101.6 79.13 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Footprint" ""
+			(at 101.6 74.93 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 101.6 74.93 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid e1a91f4e-be3e-4c27-b820-660a6ac78005)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR007")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "Capteur H1"
+		(at 99.06 83.82 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				bold
+			)
+			(justify left top)
+		)
+		(uuid 84dd9939-6575-423e-b4c2-9181bf5e06ac)
+	)
+	(symbol
+		(lib_id "Sensor_Magnetic:DRV5055A4xDBZxQ1")
+		(at 172.72 68.58 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid f4b7ea96-b61a-4985-91fe-5cab1e829987)
+		(property "Reference" "U2"
+			(at 180.34 59.69 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Value" "DRV5055A4 (SOT-23)"
+			(at 180.34 62.23 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 172.72 68.58 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 172.72 68.58 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 7808be31-2aef-4e69-a5cf-6b1e9cb5b79b)
+		)
+		(pin "2"
+			(uuid 2e5cbbd0-b03b-4735-8b41-225a570cfd94)
+		)
+		(pin "3"
+			(uuid 02461463-8815-4ba5-b77c-bf312c5c6e4d)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 170.18 58.42)
+			(xy 170.18 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 5f2bccc4-a8d2-423b-93c6-2e63d5c42675)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 170.18 55.88 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid d0f44f74-9e08-4652-8378-3fd582fce1b5)
+		(property "Reference" "#PWR008"
+			(at 170.18 55.88 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "+3V3"
+			(at 170.18 51.68 0)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 55.88 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 55.88 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 5833bc75-8923-4fb0-b265-fdb1bf9eb7b9)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR008")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 170.18 78.74)
+			(xy 170.18 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 3f08b0d3-59f6-42fa-9658-8ba9dcee125a)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 170.18 81.28 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 142ef2a0-72bb-467e-8077-54b9eea3c9f1)
+		(property "Reference" "#PWR009"
+			(at 170.18 81.28 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "GND"
+			(at 170.18 85.48 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Footprint" ""
+			(at 170.18 81.28 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 170.18 81.28 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid e765d932-5ae6-46d7-a48e-b10d38fa6df3)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR009")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 180.34 68.58)
+			(xy 185.42 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid fb74391b-1f5f-4a81-ae99-b39a4bc46806)
+	)
+	(label "HALL_2"
+		(at 185.42 68.58 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left bottom)
+		)
+		(uuid 43156dfc-e296-48fe-a656-20b23365b8ef)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 157.48 68.58 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 93ade5e9-b434-4784-80cf-3b4a5db5bf91)
+		(property "Reference" "C2"
+			(at 160.02 67.31 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 160.02 69.85 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 157.48 68.58 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 68.58 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 6bb75cdd-374f-4529-b6c9-c061bb9daaee)
+		)
+		(pin "2"
+			(uuid ef528556-71f8-4f43-bcb6-0cdbd20d5aca)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 157.48 64.77)
+			(xy 157.48 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid d11ce68c-15bf-489d-b08c-44c652131861)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 157.48 62.23 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid bdc72d24-4ae3-4a88-9b69-95c313298ad3)
+		(property "Reference" "#PWR010"
+			(at 157.48 62.23 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "+3V3"
+			(at 157.48 58.03 0)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 62.23 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 62.23 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 670569cd-9529-4afc-86a7-353c17ce0297)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 157.48 72.39)
+			(xy 157.48 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid f2d4cfbe-b9f9-497c-ab54-8090319bbcd7)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 157.48 74.93 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 24dd7460-7691-4287-a73f-48709f731204)
+		(property "Reference" "#PWR011"
+			(at 157.48 74.93 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "GND"
+			(at 157.48 79.13 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Footprint" ""
+			(at 157.48 74.93 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 157.48 74.93 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 49a624ab-d94f-4c4a-837c-4c55982bba25)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "Capteur H2"
+		(at 154.94 83.82 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				bold
+			)
+			(justify left top)
+		)
+		(uuid 0c87b5c9-0122-4d06-9945-e583789bfd42)
+	)
+	(symbol
+		(lib_id "Sensor_Magnetic:DRV5055A4xDBZxQ1")
+		(at 228.6 68.58 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 97bf6243-e28d-4ed8-9f47-77cf945024a1)
+		(property "Reference" "U3"
+			(at 236.22 59.69 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Value" "DRV5055A4 (SOT-23)"
+			(at 236.22 62.23 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 228.6 68.58 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 68.58 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 6ad264aa-1bd4-4d7d-ab51-d767ecfc5dad)
+		)
+		(pin "2"
+			(uuid 71d4565b-29eb-4c38-ba15-f4aad81a76d9)
+		)
+		(pin "3"
+			(uuid 34908110-16a3-438f-8712-5f11708f5bc7)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 226.06 58.42)
+			(xy 226.06 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 4d05db4b-adcd-4208-8ec1-4204f7a0104b)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 226.06 55.88 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid a568055c-f975-46fc-9c1f-2e1921ae76a9)
+		(property "Reference" "#PWR012"
+			(at 226.06 55.88 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "+3V3"
+			(at 226.06 51.68 0)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 55.88 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 55.88 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 5645bbec-9cb8-473b-a007-73e0b8d63f17)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 226.06 78.74)
+			(xy 226.06 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid b5823e93-7948-4f57-8cc4-e2ed1ca0036b)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 226.06 81.28 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 2e465b87-db56-4be7-a809-46d635f49c0f)
+		(property "Reference" "#PWR013"
+			(at 226.06 81.28 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "GND"
+			(at 226.06 85.48 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Footprint" ""
+			(at 226.06 81.28 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 226.06 81.28 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 4b42ebd4-d65a-43f5-9323-fe2fc65104e7)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 236.22 68.58)
+			(xy 241.3 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 6d763fba-4d21-4acb-ac94-a0a997f0bd6f)
+	)
+	(label "HALL_3"
+		(at 241.3 68.58 0)
+		(effects
+			(font (size 1.27 1.27))
+			(justify left bottom)
+		)
+		(uuid 8ba3bd78-e70a-4477-a79c-f7a43b1decdf)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 213.36 68.58 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 9fbe85c0-a7cc-4606-bdee-845ccae86281)
+		(property "Reference" "C3"
+			(at 215.9 67.31 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 215.9 69.85 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+			(at 213.36 68.58 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 68.58 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid e786f28e-a3dc-46d3-b113-140785a04eb7)
+		)
+		(pin "2"
+			(uuid 39957fa2-c1ce-4c0a-82ea-11b9e8278ca9)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 213.36 64.77)
+			(xy 213.36 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 56255f4a-e607-49c6-83bb-ec07e4fe0041)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 213.36 62.23 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid d3a254fe-dcb8-415c-96ac-70ec687328dd)
+		(property "Reference" "#PWR014"
+			(at 213.36 62.23 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "+3V3"
+			(at 213.36 58.03 0)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 62.23 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 62.23 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid f76beb01-e4a0-4097-b1ca-ff5011dd8d50)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 213.36 72.39)
+			(xy 213.36 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 535a70f8-6dff-400b-8497-6e330062cb23)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 213.36 74.93 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 1a899750-ed7a-4b79-ae62-29e282efdc6e)
+		(property "Reference" "#PWR015"
+			(at 213.36 74.93 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "GND"
+			(at 213.36 79.13 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Footprint" ""
+			(at 213.36 74.93 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 213.36 74.93 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 0ac16efc-878c-4492-b7a1-0026f19f3fe6)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "Capteur H3"
+		(at 210.82 83.82 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+				bold
+			)
+			(justify left top)
+		)
+		(uuid 5f830077-3679-478b-a1ff-d517b2a1058f)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 60.96 33.02 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 91a31cff-4495-489c-991d-e9192748189d)
+		(property "Reference" "#PWR016"
+			(at 60.96 33.02 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "+3V3"
+			(at 60.96 28.82 0)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 33.02 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 33.02 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid f617eb51-39c0-4071-8f27-88e831c9af2d)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 60.96 33.02)
+			(xy 60.96 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 9271c484-0430-414f-8432-b1ef50763d66)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 60.96 38.1 180)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid fa2d7795-266d-4abe-afb9-cf0703ad9107)
+		(property "Reference" "#FLG017"
+			(at 60.96 38.1 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+				hide
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 62.23 40.64 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 60.96 38.1 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 60.96 38.1 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid a3d3b495-fe9a-4d11-bfcb-c4c5ae0ab777)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#FLG017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 73.66 48.26 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 5cde5896-4cb5-4a94-bc6c-86fad980fd38)
+		(property "Reference" "#PWR018"
+			(at 73.66 48.26 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "GND"
+			(at 73.66 52.46 0)
+			(effects
+				(font (size 1.27 1.27))
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 48.26 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 48.26 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 06639727-89f6-43fe-b808-bf2852a0f87e)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 73.66 48.26)
+			(xy 73.66 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 580f1986-e212-4622-957b-7b336c79fa32)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 73.66 43.18 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid bc4f3073-2ee4-4fb7-91fd-77246536fe38)
+		(property "Reference" "#FLG019"
+			(at 73.66 43.18 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+				hide
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 74.93 39.37 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 43.18 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 73.66 43.18 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 75bf0155-43cb-4e59-bd90-9bd471a4497e)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#FLG019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(text "Règles de placement :\n- C1, C2, C3 à moins de 3 mm de la broche VCC de leur capteur.\n- En SOT-23 posé à plat, le DRV5055 mesure le champ perpendiculaire à la carte (Bz).\n- Positions de H1, H2, H3 imposées par la géométrie bobines / aimant : à coter dans le PCB.\n- Pas de cuivre de puissance ici. Plan de masse continu sous les capteurs.\n- Les fils des bobines vont directement aux borniers J4 à J7 de la carte de puissance\n  (une paire torsadée par bobine), jamais dans la même gaine que le câble des capteurs."
+		(at 15.24 91.44 0)
+		(effects
+			(font (size 1.5 1.5))
+			(justify left top)
+		)
+		(uuid e6866704-9dbc-4da3-81bd-b19b74ae0fe2)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 205.74 40.64 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid fc428da1-10d2-4579-ac84-bf3b05097e7d)
+		(property "Reference" "H1"
+			(at 205.74 35.56 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 209.55 40.64 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 205.74 40.64 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 40.64 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid b5bfac4b-0c3e-4e92-9f45-c568e9c0df32)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "H1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 205.74 43.18)
+			(xy 205.74 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid b2e8f8c6-2620-4e70-aca3-7db53d5e1851)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 205.74 45.72 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 132201e3-0eb5-4400-b4c1-995a5f6cc444)
+		(property "Reference" "#PWR020"
+			(at 205.74 45.72 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "GND"
+			(at 205.74 49.92 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 45.72 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 45.72 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 4e770dc3-580f-4b61-8831-37acd1a18da9)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 218.44 40.64 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid 35a14295-4e42-4522-80ce-59e173adfa25)
+		(property "Reference" "H2"
+			(at 218.44 35.56 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 222.25 40.64 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 218.44 40.64 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 40.64 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid fb3be052-4f2f-4c4b-ad78-9536914d392c)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "H2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 218.44 43.18)
+			(xy 218.44 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 8e59b8a8-311c-4ffc-904b-89b6b75c7c49)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 218.44 45.72 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 4a935f37-e349-4c72-9543-7437aff7d82c)
+		(property "Reference" "#PWR021"
+			(at 218.44 45.72 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "GND"
+			(at 218.44 49.92 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Footprint" ""
+			(at 218.44 45.72 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 45.72 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 15dc0adf-1d50-4699-8cae-9462365884e7)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR021")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 231.14 40.64 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid e88ce130-d241-4615-bd07-64204f084dae)
+		(property "Reference" "H3"
+			(at 231.14 35.56 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 234.95 40.64 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 231.14 40.64 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.14 40.64 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 791e8119-1d9f-4e34-b451-524fe6967424)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 231.14 43.18)
+			(xy 231.14 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid 3fb01cde-bd81-42fd-a1c6-24fdb0d56291)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 231.14 45.72 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid aefd20ae-b02e-40d1-965a-603a7c8f6a6a)
+		(property "Reference" "#PWR022"
+			(at 231.14 45.72 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "GND"
+			(at 231.14 49.92 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Footprint" ""
+			(at 231.14 45.72 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 231.14 45.72 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 7a96a7d2-2c40-476b-a0e0-ca18f0af6e65)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 243.84 40.64 0)
+		(unit 1)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid 487ce164-e332-4a53-a43e-7182cf1e1a02)
+		(property "Reference" "H4"
+			(at 243.84 35.56 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Value" "M3"
+			(at 247.65 40.64 0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3_Pad_Via"
+			(at 243.84 40.64 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 243.84 40.64 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid 74e293f8-8e14-4a25-8155-d63429fed93b)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "H4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(wire
+		(pts
+			(xy 243.84 43.18)
+			(xy 243.84 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid a7a556f3-a16f-44f1-b680-ffbf6b27a123)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 243.84 45.72 0)
+		(unit 1)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid 539fb6d2-7a57-4878-a0aa-ccf4f5c540d4)
+		(property "Reference" "#PWR023"
+			(at 243.84 45.72 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Value" "GND"
+			(at 243.84 49.92 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Footprint" ""
+			(at 243.84 45.72 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(property "Datasheet" "~"
+			(at 243.84 45.72 0)
+			(effects
+				(font (size 1.27 1.27))
+				hide
+			)
+		)
+		(pin "1"
+			(uuid c53e38e7-d998-4460-aaa0-2ae771fa5e2d)
+		)
+		(instances
+			(project "LM_plateau"
+				(path "/e85051b1-4a4c-4104-8e98-76c3dc255a59"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+)

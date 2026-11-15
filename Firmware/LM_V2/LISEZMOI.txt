@@ -1,0 +1,60 @@
+Projet LM_V2 - levitation magnetique 2 axes - NUCLEO-L476RG
+===========================================================
+
+Projet STM32CubeIDE complet, pret a compiler. Il correspond a LM_V2.ioc
+(STM32Cube FW_L4 V1.18.1, HAL 1.13.5).
+
+Ouvrir dans STM32CubeIDE
+  File > Open Projects from File System > Directory : C:\STT\LM_V2 > Finish
+  Project > Clean, puis Project > Build (Ctrl+B)
+  Run > Debug As > STM32 C/C++ Application pour flasher
+
+Organisation
+  LM_config.h    TOUS les reglages : grandeurs a mesurer et choix de conception
+  LM.c           sequencement de la boucle a 5 kHz, commandes, defauts
+  LM_measure.c   ADC -> courants (A), champ (mT), Vbus (V), position
+  LM_control.c   PID de position (placement de poles) + 4 PI de courant
+  LM_bridge.c    commande des L293D (sens + PWM sur EN)
+  LM_safety.c    surintensite, Vbus, objet perdu
+  LM_ident.c     identification en boucle fermee (balayage sinus)
+  LM_log.c       log serie 921600 bauds : donnees a 500 Hz, lignes #CFG #CAP #BODE #ID
+  Drivers        HAL et CMSIS STM32L4 (ne pas modifier)
+
+Correcteur de position (V2)
+  Les gains ne se choisissent plus a la main : ils sont calcules a partir du
+  modele de chaque axe, p'' = w0^2.p + beta.u, en visant un amortissement de 0,7.
+  - integrale active, Ti = 5 Td, relevee si besoin pour respecter Routh (marge 5)
+  - ponderation de consigne b = 0,5 : depassement 53 % -> 4 % sur un echelon
+  - filtre de la derivee = Td / 8
+  - courant de biais 0,15 A par paire de bobines : le L293D reste en
+    conduction continue, la boucle de courant reste lineaire
+  - levitation refusee (defaut 5) si le reglage est incoherent : voir #CFG
+  w0 et beta de LM_config.h sont PROVISOIRES : il faut les identifier.
+
+Commandes : ecrire lm.cmd dans Live Expressions
+  1 calibration des zeros          2 la position actuelle devient la consigne
+  3 remise a zero des integrales   4 echelon sur la bobine lm.step_coil
+  5 effacer le defaut              6 balayage d'identification sur lm.id_axis
+  7 appliquer w0 et beta identifies sur lm.id_axis
+  8 recalculer les gains apres modification de lm.w0[] ou lm.beta[]
+
+Identification de w0 et beta (axe par axe)
+  1. Obtenir une levitation stable avec les valeurs provisoires
+     (au besoin, ajuster lm.w0[] / lm.beta[] puis commande 8).
+  2. lm.id_axis = 0 (X) ou 1 (Y), puis lm.cmd = 6. Duree : environ 7 s,
+     un sinus de 2 mT est ajoute a la consigne, de 2 a 25 Hz.
+  3. Resultat : ligne #ID du log, ou lm.id_w0[], lm.id_beta[], lm.id_ok[].
+     lm.id_quality proche de 0 = modele fidele (0,05 en simulation).
+  4. lm.cmd = 7 pour appliquer. Puis recopier les valeurs dans LM_config.h
+     (LM_W0_X_RAD_S, LM_BETA_X...) pour les garder au prochain demarrage.
+
+Si le .ioc est regenere avec CubeMX, seul le code des sections
+USER CODE BEGIN / USER CODE END de main.c est conserve. Les fichiers
+LM*.c/.h ne sont jamais touches par CubeMX.
+
+Avant le premier essai : mettre R et L mesures dans LM_config.h.
+Au demarrage, la carte calibre les zeros pendant 0,5 s : objet retire.
+Bouton bleu B1 : marche / arret de la levitation, efface un defaut.
+LED LD2 : fixe = levitation, 1 Hz = essai, 5 Hz = defaut.
+Defauts (lm.fault) : 1 surintensite, 2 Vbus bas, 3 Vbus haut, 4 objet perdu,
+5 reglage incoherent.

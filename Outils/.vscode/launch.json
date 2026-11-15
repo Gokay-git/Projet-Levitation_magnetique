@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "LM : journal d'exemple (simulation)",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/lm_outil.py",
+      "args": ["journal_exemple_simulation.txt", "--R", "11"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "LM : carte en direct",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/lm_outil.py",
+      "args": ["${input:port}", "--R", "${input:resistance}"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "LM : lister les ports serie",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/lm_outil.py",
+      "args": ["--ports"],
+      "cwd": "${workspaceFolder}",
+      "console": "integratedTerminal"
+    }
+  ],
+  "inputs": [
+    { "id": "port", "type": "promptString", "description": "Port serie de la Nucleo (voir 'lister les ports')", "default": "COM5" },
+    { "id": "resistance", "type": "promptString", "description": "Resistance de la bobine mesuree a l'ohmmetre (ohm)", "default": "10" }
+  ]
+}
